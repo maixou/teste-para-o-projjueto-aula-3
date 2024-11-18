@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevMaster - Plataforma de Cursos</title>
+    <link rel="stylesheet" href="styele.css">
+    <style>
+        /* Estilos modernos e profissionais */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --background-color: #f3f4f6;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--background-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .course-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-player {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .course-menu {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DevMaster</h1>
+        <p>Sua plataforma de aprendizado em HTML</p>
+    </header>
+
+    <nav>
+        <button class="btn">Meus Cursos</button>
+        <button class="btn">Perfil</button>
+        <button class="btn">Suporte</button>
+    </nav>
+
+    <main class="course-container">
+        <section class="video-player">
+            <h2>Aula Atual</h2>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                <!-- Placeholder para o player de vídeo -->
+                <div style="background-color: #1a1a1a; position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white;">
+                    Player de Vídeo
+                </div>
+            </div>
+            <div style="margin-top: 1rem;">
+                <h3>Introdução ao HTML</h3>
+                <p>Aula 1 - Fundamentos básicos</p>
+            </div>
+        </section>
+
+        <aside class="course-menu">
+            <h2>Módulos do Curso</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.5rem; background-color: var(--primary-color); color: white; margin-bottom: 0.5rem; border-radius: 4px;">
+                    ▶️ Aula 1 - Introdução ao HTML
+                </li>
+                <li style="padding: 0.5rem; background-color: #f3f4f6; margin-bottom: 0.5rem; border-radius: 4px;">
+                    Capitulo 1 Aula - Precisamos fazer um acordo
+                </li>
+                <li style="padding: 0.5rem; background-color: #f3f4f6; margin-bottom: 0.5rem; border-radius: 4px;">
+                    Capitulo 1 Aula 2 - Será que este curso é para mim?
+                </li>
+                <li style="padding: 0.5rem; background-color: #f3f4f6; margin-bottom: 0.5rem; border-radius: 4px;">
+                    Capitulo 1 Aula 3 - Melhores livros para aprender HTML e CSS3 
+                </li>
+                <li style="padding: 0.5rem; background-color: #f3f4f6; margin-bottom: 0.5rem; border-radius: 4px;">
+                    Capitulo 1 Aula 4 - Como a internet chega na minha casa?
+                </li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer style="text-align: center; padding: 2rem; background-color: white; margin-top: 2rem;">
+        <p>© 2024 DevMaster - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
